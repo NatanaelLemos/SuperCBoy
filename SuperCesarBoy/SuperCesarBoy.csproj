@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23DF4DE6-68C2-4F69-BFA3-CE84F1F7308D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperCesarBoy</RootNamespace>
+    <AssemblyName>SuperCesarBoy</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\char.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\char.Designer.cs">
+      <DependentUpon>char.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EndPoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EndPoint.Designer.cs">
+      <DependentUpon>EndPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ground.Designer.cs">
+      <DependentUpon>ground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\role.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\role.Designer.cs">
+      <DependentUpon>role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Shot.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Shot.Designer.cs">
+      <DependentUpon>Shot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TransparentPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TransparentPictureBox.Designer.cs">
+      <DependentUpon>TransparentPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musics\MarioTheme.cs" />
+    <Compile Include="Stage01\stage0101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage01\stage0101.Designer.cs">
+      <DependentUpon>stage0101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage01\stage0102.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage01\stage0102.Designer.cs">
+      <DependentUpon>stage0102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage01\stage0103.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage01\stage0103.Designer.cs">
+      <DependentUpon>stage0103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage01\stage0104.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage01\stage0104.Designer.cs">
+      <DependentUpon>stage0104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stage01\stage0105.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stage01\stage0105.Designer.cs">
+      <DependentUpon>stage0105.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stageBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stageBase.Designer.cs">
+      <DependentUpon>stageBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\char.resx">
+      <DependentUpon>char.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EndPoint.resx">
+      <DependentUpon>EndPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ground.resx">
+      <DependentUpon>ground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\role.resx">
+      <DependentUpon>role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TransparentPictureBox.resx">
+      <DependentUpon>TransparentPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage01\stage0101.resx">
+      <DependentUpon>stage0101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage01\stage0102.resx">
+      <DependentUpon>stage0102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage01\stage0103.resx">
+      <DependentUpon>stage0103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage01\stage0104.resx">
+      <DependentUpon>stage0104.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stage01\stage0105.resx">
+      <DependentUpon>stage0105.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stageBase.resx">
+      <DependentUpon>stageBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\sndJump.dllx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\sndKillEnemy1.dllx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blockGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blocoInquebravel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sndLoseLife.dllx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\torpedo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodydie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SILIB\SILIB\SILIB.csproj">
+      <Project>{6b17b95f-104f-4782-877a-3ab385f103fc}</Project>
+      <Name>SILIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

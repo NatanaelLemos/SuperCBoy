@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Threading;
+
+namespace SuperCesarBoy.Fase01
+{
+    public partial class _0101 : SuperCesarBoy.faseBase
+    {
+        private Thread _EnemyThread;
+        public _0101()
+        {
+            InitializeComponent();
+
+//            _EnemyThread = new Thread(MoveEnemy);
+
+            //_EnemyThread.Start();
+        }
+
+        /*private Boolean _IsMovingEnemyLeft;
+        private void MoveEnemy()
+        {
+            _IsMovingEnemyLeft = true;
+            while (true)
+            {
+                try
+                {
+                    this.Invoke(new Action(() => MovingEnemy()));
+                    Thread.Sleep(10);
+                }
+                catch { break; }
+            }
+        }
+
+        private void MovingEnemy()
+        {
+            if (_IsMovingEnemyLeft)
+                ptbEnemy.Left--;
+            else
+                ptbEnemy.Left++;
+
+            if (ptbEnemy.Left < 0) _IsMovingEnemyLeft = false;
+            else if (ptbEnemy.Left > this.Width) _IsMovingEnemyLeft = true;
+        }
+*/
+    }
+}
