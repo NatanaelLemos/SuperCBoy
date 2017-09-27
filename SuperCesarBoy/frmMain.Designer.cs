@@ -43,13 +43,6 @@
             this.btnMusic = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // pnlResizeRight
-            // 
-            this.pnlResizeRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.pnlResizeRight.ForeColor = System.Drawing.Color.White;
-            this.pnlResizeRight.Location = new System.Drawing.Point(1088, 32);
-            this.pnlResizeRight.Size = new System.Drawing.Size(6, 562);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
@@ -202,19 +195,15 @@
             this.Controls.Add(this.ptbLife1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = SIFormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1920, 1040);
             this.Name = "frmMain";
-            this.ShowTitle = true;
             this.Text = "Super César Boy";
-            this.ThemeColor = SILIB.View.ThemeColors.Black;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.Controls.SetChildIndex(this.pnlResizeRight, 0);
             this.Controls.SetChildIndex(this.menuStrip1, 0);
             this.Controls.SetChildIndex(this.ptbLife1, 0);
             this.Controls.SetChildIndex(this.ptbLife2, 0);

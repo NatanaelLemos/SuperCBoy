@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace SuperCesarBoy
 {
-    public partial class frmMain : SILIB.View.frmMain
+    public partial class frmMain : Form
     {
         private Thread _MusicThread;
 
@@ -98,7 +98,7 @@ namespace SuperCesarBoy
         public void StartMusic()
         {
             if (_MusicThread == null) _MusicThread = new Thread(PlayMusic);
-            
+
             _MusicThread.Start();
         }
 
@@ -196,7 +196,7 @@ namespace SuperCesarBoy
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try 
+            try
             {
                 _MusicThread.Abort();
             }

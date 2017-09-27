@@ -302,12 +302,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SILIB\SILIB\SILIB.csproj">
-      <Project>{6b17b95f-104f-4782-877a-3ab385f103fc}</Project>
-      <Name>SILIB</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\music.png" />
   </ItemGroup>
   <ItemGroup>
